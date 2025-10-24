@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.boxSize {
+  width: 90vw; /* responsive width */
+  max-width: 500px; /* caps width on larger screens */
+  background-color: white;
+  border: 1px solid #535353;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portrait-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  width: 230px;
+}
+
+.spiderman {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 1px solid purple;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.br {
+  border-bottom: 1px solid #c6c6c6;
+  margin: 20px 0;
+}
+
+.artist-pfp {
+  width: 60px;
+  border-radius: 50px;
+  margin-left: 20px;
+  border: 1px solid black;
+}
+
+.icons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+.heart-icon,
+.comment-icon,
+.dm-icon {
+  height: 60px;
+  margin-right: 20px;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 20px;
+}
+
+span {
+  font-weight: 300;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  text-align: left;
+  margin-bottom: 17px;
+}
+
+.profile-info {
+  margin-left: 10px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+  font-weight: 400;
+}
+
+.portrait {
+  width: 100%;
+  height: 525px;
+  position: relative;
+  display: inline-block; /* keeps the button aligned with the image */
+}
+
+.portrait img {
+  width: 100%;
+  display: block;
+}
+
+.forwardButton,
+.rewindButton {
+  width: 35px;
+  position: absolute;
+  top: 50%; /* centered vertically */
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.3s ease, transform 0.2s ease; /* smooth fade & hover animation */
+}
+
+.forwardButton {
+  right: 2%; /* relative to portrait width */
+}
+
+.rewindButton {
+  left: 2%;
+  transform: translateY(-50%) scaleX(-1); /* flip horizontally */
+}
+
+.forwardButton:hover,
+.forwardButton:active {
+  opacity: 1; /* fully visible when hovered */
+  transform: scale(1.1); /* optional subtle zoom-in effect */
+}
