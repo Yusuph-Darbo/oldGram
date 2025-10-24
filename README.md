@@ -28,21 +28,6 @@ Users can move between posts using **forward** and **rewind** buttons that fade 
 
 ---
 
-## 💻 Setup
-
-```bash
-# Clone the repo
-git clone <repo-url>
-cd oldgram
-
-# Open in your browser
-open index.html
-```
-
-No dependencies or build tools — it’s a pure front-end site.
-
----
-
 ## 🧰 Built With
 
 * **HTML5**
