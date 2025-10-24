@@ -1,7 +1,3 @@
-Sure — here’s a **shorter, cleaner README** for your *Oldgram* site 👇
-
----
-
 # Oldgram
 
 A minimalist Instagram-style web page showcasing classic artist posts.
